@@ -1,0 +1,104 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Про нас
+{% endblock %}
+
+{% block content %}
+   <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Работаем уже 10+ лет</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+               <li class="me-auto"></li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Продано 100000+ автомобилей</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto"></li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Более 200000 довольных людей</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+              <li class="me-auto"></li>
+              <li class="d-flex align-items-center me-3">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+
+              </li>
+              <li class="d-flex align-items-center">
+                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<main>
+    <h1>Коротко о нас</h1>
+    <p class="fs-5 col-md-8">Наш автосалон — это история о страсти к автомобилям, начавшаяся десятилетия назад. Мы гордимся предлагать не только широкий выбор лучших автомобилей, отражающих последние технологические достижения и стиль, но и создавать неповторимые впечатления для каждого нашего клиента. Наша команда посвятила себя тому, чтобы сделать процесс выбора и покупки автомобиля удовольствием, поддерживая наших клиентов на каждом этапе. Добро пожаловать в мир элегантности, комфорта и надежности — добро пожаловать в наш автосалон.</p>
+
+    <div class="mb-5">
+
+    </div>
+
+    <hr class="col-3 col-md-2 mb-5">
+
+    <div class="row g-5">
+      <div class="col-md-6">
+        <h2>Наш адрес</h2>
+        <p>Мы находимся по адресу проспект Максима Горького, 2М, Чебоксары, Чувашская Республика</p>
+        <ul class="icon-list ps-0">
+          <li class="d-flex align-items-start mb-1"><a href="https://github.com/twbs/bootstrap-npm-starter" rel="noopener" target="_blank">56.149141,47.207986</a></li>
+          <li class="text-muted d-flex align-items-start mb-1">Мы находимся в парке Амазония</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h2>Контактные данные</h2>
+        <p>Обращайтесь всегда рады вам помочь.</p>
+        <ul class="icon-list ps-0">
+          <li class="d-flex align-items-start mb-1"><a>Директор Павлов Марк +79197652367</a></li>
+          <li class="d-flex align-items-start mb-1"><a>Секретарь Меган Фокс +79399675655</a></li>
+          <li class="d-flex align-items-start mb-1"><a>Почта MarkCompany@gmail.com</a></li>
+          <li class="d-flex align-items-start mb-1"><a>Доп. почта AvtoPay@gmail.com</a></li>
+          <li class="d-flex align-items-start mb-1"><a>Рабочий телефон 567-694</a></li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+    <script type="text/javascript"
+            charset="utf-8"
+            async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5cb9da559ce353c91adcb947144bfd532df9456beb6b107e6e342ae558d16383&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+{% endblock %}

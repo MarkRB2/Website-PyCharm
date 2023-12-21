@@ -1,0 +1,35 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Про нас
+{% endblock %}
+
+{% block content %}
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+      <h1 class="display-5 fw-bold text-white">Наши автомобили</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="fs-5 mb-4">Ищете надежный и стильный способ передвижения? Наши автомобили предлагают комфорт, безопасность и передовые технологии, чтобы сделать каждую поездку увлекательной и беззаботной. От элегантных седанов до мощных внедорожников, у нас есть идеальный автомобиль для вашего образа жизни. Приходите и найдите свой идеальный автомобиль уже сегодня!</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="row overflow-auto">
+                {% for Products in product %}
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow p-3 mb-5 bg-body-tertiary rounded" style="height: 600px;">
+                            <img src="{{ Products.image.url }}" alt="{{ Products.name }}" style="height: 200px; width: 200px;" class="rounded mx-auto d-block">
+                            <div class="card-body">
+                                <h2 class="card-title" style="color: emphasis;">{{ Products.name }}</h2>
+                                <p class="card-text" style="color: emphasis;">Цена: <span style="color: emphasis;">{{ Products.price }}</span> ₽</p>
+                                <p class="card-text fst-italic" style="color: emphasis;" >{{ Products.description }}</p>
+                                <button type="button" class="w-100 btn btn-lg btn-outline-dark">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+{% endblock %}
